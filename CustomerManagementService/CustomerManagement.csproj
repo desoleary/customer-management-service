@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{640B3FB0-8D35-4911-88A9-96E988117227}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomerManagement</RootNamespace>
+    <AssemblyName>CustomerManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\ActiveRecord\2.1.1\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.ActiveRecord.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\ActiveRecord\2.1.1\Castle.ActiveRecord.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Castle\Castle Windsor 2.0\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Castle\Castle Windsor 2.0\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Castle\Castle Windsor 2.0\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\NLog\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\NVelocity\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerManagementRestService.cs" />
+    <Compile Include="Exceptions\TemplateResolutionException.cs" />
+    <Compile Include="Handlers\Chain\DefaultSearchRequestHandler.cs" />
+    <Compile Include="Handlers\IRequestHandler.cs" />
+    <Compile Include="Handlers\ISearchRequestHandler.cs" />
+    <Compile Include="Handlers\Chain\SearchRequestHandlerByName.cs" />
+    <Compile Include="Handlers\RequestHandler.cs" />
+    <Compile Include="HttpMethod.cs" />
+    <Compile Include="IXmlSerializerAdapter.cs" />
+    <Compile Include="Logging\NullLogFactory.cs" />
+    <Compile Include="Logging\NullLogger.cs" />
+    <Compile Include="Mappers\IMapper.cs" />
+    <Compile Include="Mappers\StudentDAOMapper.cs" />
+    <Compile Include="Mappers\StudentMapper.cs" />
+    <Compile Include="Model\Students\IHyperMediaContext.cs" />
+    <Compile Include="Model\Students\IStudentRepository.cs" />
+    <Compile Include="Model\Students\Student.cs" />
+    <Compile Include="Persistance\Students\StudentDAO.cs" />
+    <Compile Include="Exceptions\RestException.cs" />
+    <Compile Include="ICustomerManagementRestService.cs" />
+    <Compile Include="Infrastructure\Container\ExcludeFromContainerAttribute.cs" />
+    <Compile Include="Infrastructure\Container\IDependencyResolver.cs" />
+    <Compile Include="Infrastructure\Container\Interceptors\ExceptionSuppressionAndLoggingInterceptor.cs" />
+    <Compile Include="Infrastructure\Container\Interceptors\RestExceptionInterceptor.cs" />
+    <Compile Include="Infrastructure\Container\Interceptors\SecurityLoggingInterceptor.cs" />
+    <Compile Include="Infrastructure\Container\IoC.cs" />
+    <Compile Include="Infrastructure\Container\WindsorBootstrapper.cs" />
+    <Compile Include="Infrastructure\Container\WindsorDependencyResolver.cs" />
+    <Compile Include="Infrastructure\Container\Interceptors\TraceLoggingInterceptor.cs" />
+    <Compile Include="Logging\IInvocationContext.cs" />
+    <Compile Include="Logging\ILogFactory.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\InvocationAdapter.cs" />
+    <Compile Include="Logging\InvocationFormatProvider.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\LogFactory.cs" />
+    <Compile Include="Logging\NLogAdapter.cs" />
+    <Compile Include="Persistance\Students\StudentRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RequestParameter.cs" />
+    <Compile Include="RequestParameterName.cs" />
+    <Compile Include="ServiceModel\InstanceProviders\ContainerServiceInstanceProvider.cs" />
+    <Compile Include="ServiceModel\InstanceProviders\DependencyInjectionServiceHost.cs" />
+    <Compile Include="ServiceModel\InstanceProviders\DependencyInjectionServiceHostFactory.cs" />
+    <Compile Include="Templates\Decorators\DefaultSettingsDecorator.cs" />
+    <Compile Include="Templates\ITemplateEngine.cs" />
+    <Compile Include="Templates\NVelocityAdapter.cs" />
+    <Compile Include="View\IViewEngine.cs" />
+    <Compile Include="View\ViewEngine.cs" />
+    <Compile Include="Web\Adapters\IncomingRequest.cs" />
+    <Compile Include="Web\Adapters\OutgoingResponse.cs" />
+    <Compile Include="Web\Adapters\WebOperationContext.cs" />
+    <Compile Include="Web\Adapters\WebRequest.cs" />
+    <Compile Include="Web\Adapters\WebResponse.cs" />
+    <Compile Include="Web\ClientAddress.cs" />
+    <Compile Include="Web\IIncomingRequest.cs" />
+    <Compile Include="Web\IOutgoingResponse.cs" />
+    <Compile Include="Web\IWebOperationContext.cs" />
+    <Compile Include="Web\IWebRequest.cs" />
+    <Compile Include="Web\IWebResponse.cs" />
+    <Compile Include="XmlSerializerAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\CustomerManagement.Web.Host\ActiveRecord.config">
+      <Link>ActiveRecord.config</Link>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DeleteStudent.vm" />
+    <EmbeddedResource Include="Resources\CreateStudent.vm" />
+    <EmbeddedResource Include="Resources\GetStudent.vm" />
+    <EmbeddedResource Include="Resources\SearchStudentsByName.vm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

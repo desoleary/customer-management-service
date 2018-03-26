@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Properties expected to be provided, unless these defaults are OK -->
+  <PropertyGroup>
+    <BuildDirectory Condition="$(BuildDirectory) == ''">$(MSBuildProjectDirectory)\build</BuildDirectory>
+    <PackageDirectory Condition="$(PackageDirectory) == ''">$(BuildDirectory)\package</PackageDirectory>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CleanTargets>$(CleanTargets);CleanPackageDirectory</CleanTargets>
+    <PostCleanTargets>$(PostCleanTargets);CreatePackageDirectory</PostCleanTargets>
+    <PackageTargets>$(PackageTargets);CreatePackage</PackageTargets>
+    <TraceDataTargets>$(TraceDataTargets);TracePackageData</TraceDataTargets>
+  </PropertyGroup>
+
+  <Target Name="CleanPackageDirectory">
+    <RemoveDir Directories="$(PackageDirectory)" Condition="Exists('$(PackageDirectory)')" />
+  </Target>
+
+  <Target Name="CreatePackageDirectory">
+    <MakeDir Directories="$(PackageDirectory)" Condition="!Exists('$(PackageDirectory)')" />
+  </Target>
+
+  <Target Name="CreatePackage">
+    <Error Text="Package.targets is not intended to be imported directly - it should be imported in a different packaging targets file, and the CreatePackage target must be overwritten" />
+  </Target>
+
+  <Target Name="TracePackageData">
+    <Message Text="Package.targets" />
+    <Message Text="  BuildDirectory: $(BuildDirectory)" />
+    <Message Text="  PackageDirectory: $(PackageDirectory)" />
+  </Target>
+</Project>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\CustomerManagement.UnitTests\bin\Release\CustomerManagement.UnitTests.dll" total="44" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-02-07" time="19:50:39">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.4200" os-version="Microsoft Windows NT 6.0.6002 Service Pack 2" platform="Win32NT" cwd="C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\CustomerManagement.UnitTests\bin\Release" machine-name="DESOLEARY-PC" user="desoleary" user-domain="desoleary-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\CustomerManagement.UnitTests\bin\Release\CustomerManagement.UnitTests.dll" executed="True" success="True" time="3.475" asserts="0">
+    <results>
+      <test-suite name="CustomerManagement" executed="True" success="True" time="3.472" asserts="0">
+        <results>
+          <test-suite name="UnitTests" executed="True" success="True" time="3.472" asserts="0">
+            <results>
+              <test-suite name="Handlers" executed="True" success="True" time="0.916" asserts="0">
+                <results>
+                  <test-suite name="Chain" executed="True" success="True" time="0.878" asserts="0">
+                    <results>
+                      <test-suite name="DefaultSearchRequestHandlerTest" executed="True" success="True" time="0.192" asserts="0">
+                        <results>
+                          <test-case name="CustomerManagement.UnitTests.Handlers.Chain.DefaultSearchRequestHandlerTest.ShouldReturnRestExceptionWithHttpStatusBadRequestWhenCalled" executed="True" success="True" time="0.187" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="SearchRequestHandlerByNameTest" executed="True" success="True" time="0.664" asserts="0">
+                        <results>
+                          <test-case name="CustomerManagement.UnitTests.Handlers.Chain.SearchRequestHandlerByNameTest.ShouldCallSuccessorUnderlyingRequestHandlerWhenRequestParametersDoNotSatisfyRequest" executed="True" success="True" time="0.590" asserts="0" />
+                          <test-case name="CustomerManagement.UnitTests.Handlers.Chain.SearchRequestHandlerByNameTest.ShouldCallUnderlyingStudentRepository" executed="True" success="True" time="0.066" asserts="0" />
+                          <test-case name="CustomerManagement.UnitTests.Handlers.Chain.SearchRequestHandlerByNameTest.ShouldCallUnderlyingViewEngine" executed="True" success="True" time="0.008" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="RequestHandlerTest" executed="True" success="True" time="0.034" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Handlers.RequestHandlerTest.ShouldCallUnderlyingStudentRepositoryWithGivenId" executed="True" success="True" time="0.019" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Handlers.RequestHandlerTest.ShouldCallUnderlyingStudentRepositoryWithGivenType" executed="True" success="True" time="0.012" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Handlers.RequestHandlerTest.ShouldThrowBadRequestExceptionWhenCalledWithEmptyId" executed="True" success="True" time="0.001" asserts="1" />
+                      <test-case name="CustomerManagement.UnitTests.Handlers.RequestHandlerTest.ShouldThrowBadRequestExceptionWhenCalledWithNullId" executed="True" success="True" time="0.001" asserts="1" />
+                      <test-case name="CustomerManagement.UnitTests.Handlers.RequestHandlerTest.ShouldThrowBadRequestRestExceptionWhenCalledWithNullInstance" executed="True" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Infrastructure" executed="True" success="True" time="1.557" asserts="0">
+                <results>
+                  <test-suite name="Container" executed="True" success="True" time="1.557" asserts="0">
+                    <results>
+                      <test-suite name="Interceptors" executed="True" success="True" time="0.241" asserts="0">
+                        <results>
+                          <test-suite name="ExceptionSuppressionAndLoggingInterceptorTest" executed="True" success="True" time="0.130" asserts="0">
+                            <results>
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.ExceptionSuppressionAndLoggingInterceptorTest.LogUnexpectedExceptions" executed="True" success="True" time="0.111" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.ExceptionSuppressionAndLoggingInterceptorTest.WhenUnexpectedExceptionsOccurSetStatusCodeOfOutgoingResponseToInternalServerError" executed="True" success="True" time="0.018" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="RestExceptionInterceptorTest" executed="True" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.RestExceptionInterceptorTest.ShouldReThrowExceptionForUnsupportedStatusCodes" executed="True" success="True" time="0.001" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.RestExceptionInterceptorTest.VerifyEntityBodyIsSuppressedForBadRequest" executed="True" success="True" time="0.002" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.RestExceptionInterceptorTest.VerifyEntityBodyIsSuppressedForNoContent" executed="True" success="True" time="0.001" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.RestExceptionInterceptorTest.VerifyEntityBodyIsSuppressedForNotFound" executed="True" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="SecurityLoggingInterceptorTest" executed="True" success="True" time="0.046" asserts="0">
+                            <results>
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.SecurityLoggingInterceptorTest.LogsBasicSecurityInformationForEveryRequest" executed="True" success="True" time="0.031" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.SecurityLoggingInterceptorTest.LogsSecurityInfoBeforeCallingServiceMethod" executed="True" success="True" time="0.014" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TraceLoggingInterceptorTest" executed="True" success="True" time="0.056" asserts="0">
+                            <results>
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.TraceLoggingInterceptorTest.ShouldLogInformationFromTheInvocationContext" executed="True" success="True" time="0.023" asserts="0" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.TraceLoggingInterceptorTest.ShouldLogMessageAfterInterceptedMethodIsCalled" executed="True" success="True" time="0.021" asserts="1" />
+                              <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.Interceptors.TraceLoggingInterceptorTest.ShouldLogMessageBeforeInterceptedMethodIsCalled" executed="True" success="True" time="0.007" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite name="WindsorBootstrapperTest" executed="True" success="True" time="1.315" asserts="0">
+                        <results>
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldRegisterInterceptorForExceptionSuppressionAndLogging" executed="True" success="True" time="0.815" asserts="2" />
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldRegisterInterceptorForRestException" executed="True" success="True" time="0.005" asserts="2" />
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldRegisterInterceptorForSecurityLogger" executed="True" success="True" time="0.005" asserts="2" />
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldRegisterInterceptorForTraceLogger" executed="True" success="True" time="0.003" asserts="2" />
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldResolveAllRegisteredComponents" executed="True" success="True" time="0.470" asserts="33" />
+                          <test-case name="CustomerManagement.UnitTests.Infrastructure.Container.WindsorBootstrapperTest.ShouldReturnDefaultWebRequestWhenResolvingTypeIWebRequest" executed="True" success="True" time="0.008" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Logging" executed="True" success="True" time="0.277" asserts="0">
+                <results>
+                  <test-suite name="InvocationFormatProviderTest" executed="True" success="True" time="0.241" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Logging.InvocationFormatProviderTest.ShouldIncludeTheReturnValueWhenAFormatIsSpecified" executed="True" success="True" time="0.227" asserts="1" />
+                      <test-case name="CustomerManagement.UnitTests.Logging.InvocationFormatProviderTest.ShouldReturnEmptyStringIfObjectToBeFormattedIsNull" executed="True" success="True" time="0.008" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Logging.InvocationFormatProviderTest.ShouldReturnTheDefaultStringWhenNoFormatIsSpecified" executed="True" success="True" time="0.003" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="LogFactoryTest" executed="True" success="True" time="0.026" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Logging.LogFactoryTest.ShouldReturnInitializedLoggerInstance" executed="True" success="True" time="0.025" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="LogTest" executed="True" success="True" time="0.006" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Logging.LogTest.ShouldAskDependencyResolverForFactoryUsedToReturnLogger" executed="True" success="True" time="0.005" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Service" executed="True" success="True" time="0.641" asserts="0">
+                <results>
+                  <test-suite name="CustomerManagementRestServiceTest" executed="True" success="True" time="0.065" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Service.CustomerManagementRestServiceTest.Create_ShouldCallUnderlyingRequestHandlerWithPassedInStudent" executed="True" success="True" time="0.039" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Service.CustomerManagementRestServiceTest.Delete_ShouldCallUnderlyingRequestHandler" executed="True" success="True" time="0.002" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Service.CustomerManagementRestServiceTest.Get_ShouldCallUnderlyingRequestHandler" executed="True" success="True" time="0.017" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.Service.CustomerManagementRestServiceTest.Search_ShouldCallUnderlyingRequestHandler" executed="True" success="True" time="0.004" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="RequestParameterTest" executed="True" success="True" time="0.012" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Service.RequestParameterTest.ShouldIgnoreRequestParameterWithKeyThatIsEmpty" executed="True" success="True" time="0.003" asserts="1" />
+                      <test-case name="CustomerManagement.UnitTests.Service.RequestParameterTest.ShouldReturnFirstAndLastNameAsARequestParameterWhenMatchingKeysFoundInAnyCaseFormat" executed="True" success="True" time="0.002" asserts="2" />
+                      <test-case name="CustomerManagement.UnitTests.Service.RequestParameterTest.ShouldReturnFirstNameAsARequestParameter" executed="True" success="True" time="0.002" asserts="1" />
+                      <test-case name="CustomerManagement.UnitTests.Service.RequestParameterTest.ShouldReturnLastNameAsARequestParameter" executed="True" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="XmlSerializerTest" executed="True" success="True" time="0.561" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.Service.XmlSerializerTest.ShouldDoSomething" executed="True" success="True" time="0.561" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="View" executed="True" success="True" time="0.064" asserts="0">
+                <results>
+                  <test-suite name="ViewEngineTest" executed="True" success="True" time="0.064" asserts="0">
+                    <results>
+                      <test-case name="CustomerManagement.UnitTests.View.ViewEngineTest.ShouldCallUnderlyingTemplateEngineWhenInstanceTypePassedMatchesRegistry" executed="True" success="True" time="0.024" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.View.ViewEngineTest.ShouldCallUnderlyingTemplateEngineWhenInstanceTypePassedMatchesRegistry_WithMatchedTemplateAndDictionaryContainingInstanceTypeNameAndInstance" executed="True" success="True" time="0.004" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.View.ViewEngineTest.ShouldHandleGenericInstanceTypesBeingPassed_CallsUnderlyingTemplateEngineWithInnerTypeName" executed="True" success="True" time="0.031" asserts="0" />
+                      <test-case name="CustomerManagement.UnitTests.View.ViewEngineTest.ShouldThrowSomethingWhenInstanceTypePassedDoesNotMatchRegistry" executed="True" success="True" time="0.003" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

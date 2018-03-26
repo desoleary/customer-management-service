@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost 
+    Service="CustomerManagement.CustomerManagementRestService, CustomerManagement"
+    Factory="CustomerManagement.ServiceModel.InstanceProviders.DependencyInjectionServiceHostFactory, CustomerManagement"
+%>

@@ -1,0 +1,655 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Mappers/f:StudentDAOMapper.cs" caret="302" fromTop="9" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Resources/f:SearchStudentsByName.vm" caret="48" fromTop="1" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Resources/f:GetStudent.vm" caret="33" fromTop="0" />
+      <File id="386D311E-1BA4-4EFF-BE72-A006C63CACCB/d:Templates/f:NVelocityAdapterTest.cs" caret="2422" fromTop="32" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Persistance/d:Students/f:StudentRepositoryTest.cs" caret="3772" fromTop="41" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/f:WindsorBootstrapper.cs" caret="1308" fromTop="32" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Handlers/f:RequestHandler.cs" caret="557" fromTop="17" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Persistance/d:Students/f:StudentRepository.cs" caret="717" fromTop="19" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Templates/f:NVelocityAdapter.cs" caret="779" fromTop="22" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:View/f:ViewEngine.cs" caret="763" fromTop="19" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Handlers/d:Chain/f:SearchRequestHandlerByName.cs" caret="669" fromTop="17" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:RequestParameter.cs" caret="1033" fromTop="21" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/d:Interceptors/f:SecurityLoggingInterceptor.cs" caret="472" fromTop="13" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/d:Interceptors/f:ExceptionSuppressionAndLoggingInterceptor.cs" caret="537" fromTop="15" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/d:Interceptors/f:RestExceptionInterceptor.cs" caret="491" fromTop="14" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/f:WindsorDependencyResolver.cs" caret="615" fromTop="23" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/f:IoC.cs" caret="545" fromTop="21" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:ServiceModel/d:InstanceProviders/f:DependencyInjectionServiceHostFactory.cs" caret="432" fromTop="9" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:ServiceModel/d:InstanceProviders/f:DependencyInjectionServiceHost.cs" caret="1022" fromTop="11" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1176" fromTop="19" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:ServiceModel/d:InstanceProviders/f:ContainerServiceInstanceProvider.cs" caret="0" fromTop="0" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:ICustomerManagementRestService.cs" caret="676" fromTop="19" />
+      <File id="6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB/d:Service/f:CustomerManagementRestServiceTest.cs" caret="1539" fromTop="29" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:CustomerManagementRestService.cs" caret="1670" fromTop="41" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Model/d:Students/f:Student.cs" caret="1497" fromTop="40" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/f:IWebRequest.cs" caret="185" fromTop="7" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/f:IWebResponse.cs" caret="85" fromTop="4" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebResponse.cs" caret="477" fromTop="17" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="999" fromTop="37" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="1535" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="386D311E-1BA4-4EFF-BE72-A006C63CACCB/d:Templates/f:NVelocityAdapterTest.cs" caret="1911" fromTop="22" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Infrastructure/d:Container/f:WindsorBootstrapper.cs" caret="3098" fromTop="19" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:View/f:ViewEngine.cs" caret="0" fromTop="0" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="650" fromTop="22" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="488" fromTop="17" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/f:IWebRequest.cs" caret="133" fromTop="4" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="2696" fromTop="43" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="703" fromTop="12" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="2135" fromTop="43" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="1313" fromTop="31" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="1974" fromTop="54" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="1014" fromTop="35" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="1389" fromTop="40" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="1022" fromTop="3" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="1552" fromTop="33" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="1941" fromTop="42" />
+      <File id="99EF866F-FAEF-4680-9014-BD1F207B7548/d:Service/f:CustomerManagementRestServiceTest.cs" caret="2681" fromTop="43" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/d:Web/d:Adapters/f:WebRequest.cs" caret="1330" fromTop="28" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1133" fromTop="16" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1280" fromTop="28" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1728" fromTop="34" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1176" fromTop="20" />
+      <File id="92819BC0-88C5-4969-937A-7D2D2AE2B5A8/f:Web.config" caret="1176" fromTop="19" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:CustomerManagementRestService.cs" caret="1150" fromTop="23" />
+      <File id="6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB/d:Service/f:CustomerManagementRestServiceTest.cs" caret="2384" fromTop="53" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:CustomerManagementRestService.cs" caret="145" fromTop="6" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:CustomerManagementRestService.cs" caret="344" fromTop="9" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:CustomerManagementRestService.cs" caret="1451" fromTop="35" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:ICustomerManagementRestService.cs" caret="163" fromTop="7" />
+      <File id="640B3FB0-8D35-4911-88A9-96E988117227/f:ICustomerManagementRestService.cs" caret="676" fromTop="19" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="75" />
+      <Item value="void" priority="37" />
+      <Item value="private" priority="13" />
+      <Item value="Container" priority="0" />
+      <Item value="SetUp" priority="5" />
+      <Item value="container" priority="8" />
+      <Item value="new" priority="73" />
+      <Item value="WindsorContainer" priority="1" />
+      <Item value="WindsorBootstrapperTest" priority="0" />
+      <Item value="WindsorBootstrapper" priority="2" />
+      <Item value="windsorContainer" priority="0" />
+      <Item value="WindsorDependencyResolver" priority="1" />
+      <Item value="dependencyResolver" priority="1" />
+      <Item value="Assembly" priority="0" />
+      <Item value="CompoundChild" priority="0" />
+      <Item value="Component" priority="3" />
+      <Item value="CustomerManagementRestService" priority="2" />
+      <Item value="using" priority="6" />
+      <Item value="Castle" priority="2" />
+      <Item value="Core" priority="0" />
+      <Item value="ILogger" priority="6" />
+      <Item value="name" priority="3" />
+      <Item value="ILogFactory" priority="1" />
+      <Item value="NLog" priority="0" />
+      <Item value="NLogAdapter" priority="3" />
+      <Item value="string" priority="67" />
+      <Item value="return" priority="33" />
+      <Item value="this" priority="2" />
+      <Item value="LogFactory" priority="1" />
+      <Item value="logAdapter" priority="1" />
+      <Item value="ILogAdapter" priority="2" />
+      <Item value="loggerAdapter" priority="1" />
+      <Item value="It" priority="5" />
+      <Item value="var" priority="5" />
+      <Item value="Mock" priority="9" />
+      <Item value="logger" priority="0" />
+      <Item value="Windsor" priority="0" />
+      <Item value="object" priority="17" />
+      <Item value="typeof" priority="10" />
+      <Item value="foreach" priority="7" />
+      <Item value="referenceCollection" priority="1" />
+      <Item value="collection" priority="4" />
+      <Item value="cw" priority="2" />
+      <Item value="type" priority="5" />
+      <Item value="reference" priority="0" />
+      <Item value="list" priority="8" />
+      <Item value="as" priority="1" />
+      <Item value="IWebOperationContext" priority="3" />
+      <Item value="webOperationContext" priority="6" />
+      <Item value="OperationContract" priority="0" />
+      <Item value="WebGet" priority="0" />
+      <Item value="ResponseFormat" priority="0" />
+      <Item value="WebMessageFormat" priority="0" />
+      <Item value="UriTemplate" priority="1" />
+      <Item value="StudentTest" priority="0" />
+      <Item value="Student" priority="27" />
+      <Item value="IStudentRepository" priority="2" />
+      <Item value="StudentRepositoryTest" priority="1" />
+      <Item value="repository" priority="7" />
+      <Item value="students" priority="10" />
+      <Item value="IEnumerable" priority="3" />
+      <Item value="IList" priority="3" />
+      <Item value="Students" priority="0" />
+      <Item value="StudentDAO" priority="4" />
+      <Item value="where" priority="0" />
+      <Item value="student" priority="31" />
+      <Item value="firstName" priority="6" />
+      <Item value="lastName" priority="9" />
+      <Item value="select" priority="0" />
+      <Item value="List&lt;Student&gt;" priority="2" />
+      <Item value="dao" priority="0" />
+      <Item value="set" priority="2" />
+      <Item value="value" priority="2" />
+      <Item value="let" priority="1" />
+      <Item value="firstNameMatches" priority="0" />
+      <Item value="lastNameMatches" priority="0" />
+      <Item value="SetUpFixture" priority="2" />
+      <Item value="StringBuilder" priority="5" />
+      <Item value="expectedXml" priority="4" />
+      <Item value="ViewEngineTest" priority="0" />
+      <Item value="ITemplateEngine" priority="0" />
+      <Item value="Dictionary" priority="2" />
+      <Item value="viewEngine" priority="5" />
+      <Item value="templateEngine" priority="1" />
+      <Item value="null" priority="21" />
+      <Item value="DateTime" priority="6" />
+      <Item value="Assert" priority="5" />
+      <Item value="expectedInstance" priority="1" />
+      <Item value="engine" priority="1" />
+      <Item value="NVelocityTest" priority="0" />
+      <Item value="adapter" priority="1" />
+      <Item value="List" priority="1" />
+      <Item value="IDictionary" priority="3" />
+      <Item value="Dictionary&lt;string,IEnumerable&lt;Student&gt;&gt;" priority="0" />
+      <Item value="fullName" priority="1" />
+      <Item value="if" priority="10" />
+      <Item value="typeName" priority="2" />
+      <Item value="typeFullName" priority="1" />
+      <Item value="char" priority="0" />
+      <Item value="genericIdentifyier" priority="0" />
+      <Item value="true" priority="1" />
+      <Item value="false" priority="0" />
+      <Item value="split" priority="1" />
+      <Item value="startOfEncapsulatedTypeFullName" priority="0" />
+      <Item value="encapsulatedTypeName" priority="1" />
+      <Item value="returnedTypeName" priority="0" />
+      <Item value="innerTypeName" priority="0" />
+      <Item value="TemplateLocation" priority="0" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="0" />
+      <Item value="templates" priority="0" />
+      <Item value="T" priority="0" />
+      <Item value="FileStyleUriParser" priority="0" />
+      <Item value="sb" priority="11" />
+      <Item value="actualXml" priority="2" />
+      <Item value="ToXmlString" priority="0" />
+      <Item value="IViewEngine" priority="1" />
+      <Item value="Type" priority="1" />
+      <Item value="ReturnMessage" priority="0" />
+      <Item value="Func&lt;IEnumerable&lt;Student&gt;&gt;" priority="0" />
+      <Item value="IncomingRequest" priority="0" />
+      <Item value="QueryParameters" priority="0" />
+      <Item value="NameValueCollection" priority="2" />
+      <Item value="IIncomingRequest" priority="1" />
+      <Item value="incomingRequest" priority="2" />
+      <Item value="CreateService" priority="0" />
+      <Item value="WebHttpSecurityMode" priority="0" />
+      <Item value="class" priority="6" />
+      <Item value="const" priority="2" />
+      <Item value="RequestParameter" priority="4" />
+      <Item value="readonly" priority="2" />
+      <Item value="dictionary" priority="3" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="1" />
+      <Item value="queryParameters" priority="0" />
+      <Item value="nameValueCollection" priority="1" />
+      <Item value="item" priority="8" />
+      <Item value="key" priority="4" />
+      <Item value="NewsStyleUriParser" priority="1" />
+      <Item value="List&lt;string&gt;" priority="1" />
+      <Item value="filteredRequestParameters" priority="1" />
+      <Item value="static" priority="3" />
+      <Item value="parameter" priority="1" />
+      <Item value="requestParameter" priority="8" />
+      <Item value="in" priority="0" />
+      <Item value="registeredKey" priority="0" />
+      <Item value="int" priority="1" />
+      <Item value="long" priority="0" />
+      <Item value="Configuration" priority="1" />
+      <Item value="ConfigurationSettings" priority="1" />
+      <Item value="System" priority="0" />
+      <Item value="get" priority="0" />
+      <Item value="IRequestHandler" priority="4" />
+      <Item value="requestHandler" priority="11" />
+      <Item value="IRequestParameter" priority="1" />
+      <Item value="Mock&lt;IRequestParameter&gt;" priority="1" />
+      <Item value="Mock&lt;IRequestHandler&gt;" priority="2" />
+      <Item value="thr" priority="2" />
+      <Item value="RestException" priority="5" />
+      <Item value="HttpStatusCode" priority="21" />
+      <Item value="successorRequestHandler" priority="0" />
+      <Item value="DefaultRequestHandlerTest" priority="0" />
+      <Item value="restException" priority="2" />
+      <Item value="service" priority="4" />
+      <Item value="Properties" priority="0" />
+      <Item value="Settings" priority="1" />
+      <Item value="WebRequest" priority="0" />
+      <Item value="webRequest" priority="1" />
+      <Item value="response" priority="1" />
+      <Item value="OutgoingResponse" priority="0" />
+      <Item value="uriTemplate" priority="1" />
+      <Item value="baseUri" priority="0" />
+      <Item value="Get" priority="0" />
+      <Item value="responseXml" priority="0" />
+      <Item value="IDependencyResolver" priority="0" />
+      <Item value="IoC" priority="0" />
+      <Item value="JKhjkfhsjkhf" priority="0" />
+      <Item value="RequestHandlerForSearchByName" priority="0" />
+      <Item value="Property" priority="0" />
+      <Item value="studentId" priority="0" />
+      <Item value="RequestHandlerTest" priority="0" />
+      <Item value="Mock&lt;IStudentRepository&gt;" priority="0" />
+      <Item value="Mock&lt;IViewEngine&gt;" priority="0" />
+      <Item value="RequestHandler" priority="0" />
+      <Item value="Convert" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Action" priority="5" />
+      <Item value="try" priority="2" />
+      <Item value="e" priority="0" />
+      <Item value="Common" priority="1" />
+      <Item value="TestUtilities" priority="1" />
+      <Item value="XmlWriter" priority="1" />
+      <Item value="xmlWriter" priority="0" />
+      <Item value="Stream" priority="0" />
+      <Item value="XmlElement" priority="0" />
+      <Item value="XmlSerializerFormat" priority="0" />
+      <Item value="Serializable" priority="1" />
+      <Item value="XmlRoot" priority="0" />
+      <Item value="Namespace" priority="0" />
+      <Item value="xmlToBeSerialised" priority="1" />
+      <Item value="func" priority="1" />
+      <Item value="xmlSerializer" priority="1" />
+      <Item value="x" priority="3" />
+      <Item value="XElement" priority="0" />
+      <Item value="virtual" priority="0" />
+      <Item value="studentXml" priority="0" />
+      <Item value="default" priority="2" />
+      <Item value="Templates" priority="0" />
+      <Item value="XmlSerializerTest" priority="0" />
+      <Item value="WebInvoke" priority="1" />
+      <Item value="MethodAccessException" priority="0" />
+      <Item value="FirstName" priority="3" />
+      <Item value="LastName" priority="3" />
+      <Item value="DateOfBirth" priority="3" />
+      <Item value="AddressLine1" priority="3" />
+      <Item value="AddressLine2" priority="3" />
+      <Item value="Grade" priority="3" />
+      <Item value="PhoneNumber" priority="3" />
+      <Item value="Enum" priority="0" />
+      <Item value="httpStatusCode" priority="2" />
+      <Item value="action" priority="2" />
+      <Item value="code" priority="0" />
+      <Item value="Func" priority="0" />
+      <Item value="Action&lt;HttpStatusCode&gt;" priority="0" />
+      <Item value="i" priority="0" />
+      <Item value="methodWhichThrows" priority="0" />
+      <Item value="studentDAO" priority="0" />
+      <Item value="TOutput" priority="0" />
+      <Item value="TInput" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="dateOfBirth" priority="0" />
+      <Item value="phoneNumber" priority="0" />
+      <Item value="addressLine1" priority="0" />
+      <Item value="addressLine2" priority="0" />
+      <Item value="grade" priority="0" />
+      <Item value="id" priority="1" />
+      <Item value="HttpMethod" priority="1" />
+      <Item value="httpMethod" priority="0" />
+      <Item value="request" priority="1" />
+      <Item value="WebMessageBodyStyle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Windsor.WindsorContainer">
+      <Item value="Register" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.AllTypes">
+      <Item value="Pick" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.AllTypesOf">
+      <Item value="FromAssembly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="GetExecutingAssembly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.Component">
+      <Item value="For" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.ComponentRegistration`1">
+      <Item value="Named" priority="3" />
+      <Item value="LifeStyle" priority="3" />
+      <Item value="ImplementedBy" priority="2" />
+      <Item value="DependsOn" priority="1" />
+      <Item value="ServiceOverrides" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.Lifestyle.LifestyleGroup`1">
+      <Item value="Transient" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Void">
+      <Item value="ShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Object" priority="21" />
+      <Item value="Setup" priority="8" />
+      <Item value="VerifySet" priority="0" />
+      <Item value="Verify" priority="8" />
+      <Item value="SetupSet" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagementService.Logging.ILogAdapter">
+      <Item value="CreateLogger" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.It">
+      <Item value="IsAny" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns" priority="8" />
+      <Item value="Throws" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagementService.Logging.ILogger">
+      <Item value="ShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Windsor.IWindsorContainer">
+      <Item value="Register" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.ServiceOverride">
+      <Item value="ForKey" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.ServiceOverrideKey">
+      <Item value="Eq" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.Interceptor.InterceptorGroup`1">
+      <Item value="First" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Name" priority="5" />
+      <Item value="FullName" priority="0" />
+      <Item value="IsAssignableFrom" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Core.InterceptorReferenceCollection">
+      <Item value="Last" priority="1" />
+      <Item value="ToList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Core.InterceptorReference">
+      <Item value="ServiceType" priority="0" />
+      <Item value="ComponentKey" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageFormat">
+      <Item value="Xml" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagementService.Domain.Student">
+      <Item value="FindAll" priority="0" />
+      <Item value="FindAllByProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.ActiveRecord.ActiveRecordBase`1">
+      <Item value="FindAllByProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagementService.Persistance.StudentDAO">
+      <Item value="Queryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagementService.Persistance.StudentDAO">
+      <Item value="FirstName" priority="1" />
+      <Item value="LastName" priority="2" />
+      <Item value="PhoneNumber" priority="1" />
+      <Item value="DateOfBirth" priority="0" />
+      <Item value="AddressLine1" priority="0" />
+      <Item value="AddressLine2" priority="0" />
+      <Item value="Grade" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Equals" priority="1" />
+      <Item value="ShouldEqual" priority="3" />
+      <Item value="Contains" priority="2" />
+      <Item value="Split" priority="0" />
+      <Item value="LastIndexOf" priority="1" />
+      <Item value="Substring" priority="1" />
+      <Item value="ToUpper" priority="2" />
+      <Item value="ShouldNotBeNull" priority="1" />
+      <Item value="ShouldNotContain" priority="0" />
+      <Item value="WithoutFormattingShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add" priority="1" />
+      <Item value="Contains" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.IntegrationTests.Persistance.Students.Student">
+      <Item value="FirstName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append" priority="14" />
+      <Item value="ToString" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagementService.Model.Students.IStudentRepository">
+      <Item value="GetStudentsByName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.View.ViewEngine">
+      <Item value="Render" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Templates.ITemplateEngine">
+      <Item value="Merge" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.UnitTests.TestUtilities.Assert">
+      <Item value="ThrowsExactly" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Templates.NVelocityAdapter">
+      <Item value="Merge" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="GetType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Keys" priority="0" />
+      <Item value="Add" priority="1" />
+      <Item value="ContainsKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Contains" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Model.Students.Student">
+      <Item value="FirstName" priority="2" />
+      <Item value="LastName" priority="1" />
+      <Item value="DateOfBirth" priority="2" />
+      <Item value="AddressLine1" priority="2" />
+      <Item value="AddressLine2" priority="2" />
+      <Item value="ShouldBeNull" priority="0" />
+      <Item value="PhoneNumber" priority="1" />
+      <Item value="Grade" priority="1" />
+      <Item value="ShouldNotBeNull" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.View.IViewEngine">
+      <Item value="Render" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Web.IWebOperationContext">
+      <Item value="IncomingRequest" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Web.IIncomingRequest">
+      <Item value="QueryParameters" priority="2" />
+      <Item value="HttpMethod" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="AllKeys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.UnitTests.Service.RequestParameterName">
+      <Item value="FirstName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="2" />
+      <Item value="Format" priority="2" />
+      <Item value="IsNullOrEmpty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.RequestParameter">
+      <Item value="FirstName" priority="0" />
+      <Item value="ShouldNotBeNull" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.IRequestParameter">
+      <Item value="FirstName" priority="1" />
+      <Item value="LastName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Persistance.Students.StudentDAO">
+      <Item value="Id" priority="1" />
+      <Item value="SaveAndFlush" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.Windsor.Installer.Configuration">
+      <Item value="FromAppConfig" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Properties.Settings">
+      <Item value="GetStudentByIdUriTemplate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Handlers.Chain.IRequestHandler">
+      <Item value="HandleRequest" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Handlers.Chain.RequestHandlerForSearchByName">
+      <Item value="HandleRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.HttpStatusCode">
+      <Item value="BadRequest" priority="4" />
+      <Item value="OK" priority="0" />
+      <Item value="NotFound" priority="2" />
+      <Item value="UseProxy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Handlers.IRequestHandler">
+      <Item value="HandleRequest" priority="2" />
+      <Item value="HandleRequestFor" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Handlers.Chain.DefaultRequestHandler">
+      <Item value="HandleRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Exceptions.RestException">
+      <Item value="StatusCode" priority="2" />
+      <Item value="ShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpStatusCode">
+      <Item value="ShouldEqual" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.CustomerManagementRestService">
+      <Item value="Search" priority="0" />
+      <Item value="GetType" priority="0" />
+      <Item value="Create" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.IntegrationTests.Properties.Settings">
+      <Item value="Default" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.IntegrationTests.Properties.Settings">
+      <Item value="CustomerManagementBaseUri" priority="1" />
+      <Item value="WebRequestTimeoutInMilliseconds" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Web.Adapters.WebRequest">
+      <Item value="GetResponseFor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Web.IWebResponse">
+      <Item value="Body" priority="1" />
+      <Item value="StatusCode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.Infrastructure.Container.IoC">
+      <Item value="Initialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.Infrastructure.Container.WindsorBootstrapper">
+      <Item value="Initialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Infrastructure.Container.WindsorDependencyResolver">
+      <Item value="GetInstanceOf" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.Property">
+      <Item value="ForKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Handlers.RequestHandler">
+      <Item value="HandleRequestFor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Model.Students.IStudentRepository">
+      <Item value="Get" priority="1" />
+      <Item value="Modify" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Linq.XElement">
+      <Item value="Parse" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Persistance.Students.StudentRepository">
+      <Item value="Get" priority="0" />
+      <Item value="Modify" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.Persistance.Students.StudentDAO">
+      <Item value="Find" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.Common.TestUtilities.Assert">
+      <Item value="ThrowsExactly" priority="0" />
+      <Item value="ThrowsNotFoundRestException" priority="1" />
+      <Item value="GenericList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="GetType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Action">
+      <Item value="Invoke" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlWriter">
+      <Item value="Create" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Func`2">
+      <Item value="Invoke" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.UnitTests.Service.IXmlSerializer">
+      <Item value="Deserialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.IXmlSerializer">
+      <Item value="Deserialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="Equals" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.UnitTests.Service.XmlSerializerAdapter">
+      <Item value="Deserialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Action`1">
+      <Item value="Invoke" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomerManagement.Mappers.StudentMapper">
+      <Item value="MapFrom" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebRequest">
+      <Item value="Method" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomerManagement.HttpMethod">
+      <Item value="GET" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageBodyStyle">
+      <Item value="Bare" priority="1" />
+      <Item value="Wrapped" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

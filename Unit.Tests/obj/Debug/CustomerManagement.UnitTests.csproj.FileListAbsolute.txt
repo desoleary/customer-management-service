@@ -1,0 +1,9 @@
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\CustomerManagement.UnitTests.dll
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\CustomerManagement.UnitTests.pdb
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\CustomerManagementService.dll
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\NBehave.Spec.NUnit.dll
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\nunit.framework.dll
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\bin\Debug\CustomerManagementService.pdb
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\obj\Debug\CustomerManagement.UnitTests.dll
+C:\Users\desoleary\Documents\Visual Studio 2008\Projects\CustomerManagementService\Tests.Unit\obj\Debug\CustomerManagement.UnitTests.pdb

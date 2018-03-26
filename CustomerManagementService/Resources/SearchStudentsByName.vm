@@ -1,0 +1,13 @@
+﻿<Students>
+  #foreach($Student in $StudentList)
+  <Student href="$!{Student.GetUri}">
+    <FirstName>$!{Student.FirstName}</FirstName>
+    <LastName>$!{Student.LastName}</LastName>
+    <DateOfBirth>$!{Student.DateOfBirth}</DateOfBirth>
+    <PhoneNumber>$!{Student.PhoneNumber}</PhoneNumber>
+    <AddressLine1>$!{Student.AddressLine1}</AddressLine1>
+    <AddressLine2>$!{Student.AddressLine2}</AddressLine2>
+    <Grade>$!{Student.Grade}</Grade>
+  </Student>
+  #end
+</Students>

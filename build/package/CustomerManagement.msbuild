@@ -1,0 +1,112 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Add project-specific environment-independent properties -->
+  <!-- common-build sets some properties already in Default.targets -->
+  <PropertyGroup>
+  </PropertyGroup>
+
+  <!-- Add any paths to support tasks and targets -->
+  <PropertyGroup>
+    <CommonBuildDirectory>$(MSBuildProjectDirectory)\Dependencies\CM.NET</CommonBuildDirectory>
+    <NUnitDirectory>$(MSBuildProjectDirectory)\Dependencies\NUnit\2.5.2.9222\bin\net-2.0</NUnitDirectory>
+  </PropertyGroup>
+
+  <!-- Hook into the common-build workflow, see $(CommonBuildDirectory)\MasterWorkflow.Targets -->
+  <PropertyGroup>
+    <PackageTargets>$(PrePackageTargets);CopyPackageFiles;CopyToPackageDirectory</PackageTargets>
+    <DeployTargets>DeployDatabase</DeployTargets>
+    <!-- <PreFunctionalTestTargets>SpliceFunctionalTestConfig</PreFunctionalTestTargets> -->    
+  </PropertyGroup>
+
+
+  <!-- Add any common-build scripts that also hook into the workflow in MasterWorkflow.Targets -->
+  <Import Project="$(CommonBuildDirectory)\Default.Targets" />
+  <Import Project="$(CommonBuildDirectory)\Sfx.Targets" />
+  <Import Project="$(CommonBuildDirectory)\Deploy.Targets" />
+
+  <UsingTask TaskName="Microsoft.Sdc.Tasks.XmlFile.SetValue" AssemblyFile="$(CMDirectory)\Microsoft.Sdc.Tasks.dll" />
+  <UsingTask TaskName="MSBuild.Community.Tasks.SqlServer.ExecuteDDL" AssemblyFile="$(CMDirectory)\MSBuild.Community.Tasks.dll" />
+  <UsingTask TaskName="MSBuild.Community.Tasks.SqlExecute" AssemblyFile="$(CMDirectory)\MSBuild.Community.Tasks.dll" />
+  <UsingTask TaskName="MSBuild.Dbdeploy.Task.Dbdeploy" AssemblyFile="$(MSBuildProjectDirectory)\Dependencies\dbdeploy.net\MSBuild.Dbdeploy.Task.dll" />
+  <UsingTask TaskName="Microsoft.Sdc.Tasks.File.Replace" AssemblyFile="$(CMDirectory)\Microsoft.Sdc.Tasks.dll" />
+  <UsingTask TaskName="Microsoft.Sdc.Tasks.Sql.DisconnectUsers" AssemblyFile="$(CMDirectory)\Microsoft.Sdc.Tasks.dll" />
+
+  <!-- Add your custom targets -->
+  <Target Name="CopyPackageFiles">
+    <ItemGroup>
+      <PackageFiles Include="$(MSBuildProjectDirectory)\$(env-WebHostProjectName)\*.svc" />
+      <PackageFiles Include="$(MSBuildProjectDirectory)\$(env-WebHostProjectName)\*.config" />
+      <PackageFiles Include="$(MSBuildProjectDirectory)\$(env-WebHostProjectName)\bin\*.dll" />
+      <PackageFiles Include="$(MSBuildProjectDirectory)\Database\**\*.sql" />
+      <PackageFiles Include="$(MSBuildProjectDirectory)\Dependencies\dbdeploy.net\*" />
+    </ItemGroup>
+
+    <ChangeDirectoryPrefix Files="@(PackageFiles)" FromPrefix="$(MSBuildProjectDirectory)" ToPrefix="$(PackageDirectory)">
+      <Output TaskParameter="TransformedFiles" ItemName="DestinationPackageFiles" />
+    </ChangeDirectoryPrefix>
+    <Copy SourceFiles="@(PackageFiles)" DestinationFiles="@(DestinationPackageFiles)" />
+  </Target>
+
+  <Target Name="CopyToPackageDirectory">
+    <!-- 
+    Note a common MSBuild problem of evaluating wildcards in ItemGroups!
+    ItemGroup wildcards are expanded when the file is parsed, not when they're used.
+    This is often too soon, because the files that the wildcard is meant to capture don't exist
+    until a target is run (for example, DotNet.targets copies the output of Compile to the
+    package directory, but those build outputs don't exist until compilation).
+    To prevent wildcard expansion, use CreateItem instead.
+    Also note that DotNet.targets saves the output of compile in a property called Artifacts.
+    -->
+    <CreateItem Include="**\bin\$(Configuration)\**\*">
+      <Output TaskParameter="Include" ItemName="PackageFiles" />
+    </CreateItem>
+    <Copy SourceFiles="$(PackageFiles)" DestinationFolder="$(PackageDirectory)" />
+  </Target>
+
+  <Target Name="CreateDatabase" Condition="$(env-DBApplyBaseline) == 'true'">
+    <File.Replace Path="$(PackageDirectory)\Database\baseline.sql" OldValue="$DBUSER" NewValue="$(env-DBUser)" />
+    <File.Replace Path="$(PackageDirectory)\Database\baseline.sql" OldValue="$DBPASSWORD" NewValue="$(env-DBPassword)" />
+
+    <Sql.DisconnectUsers ServerName="$(env-DBServer)" DatabaseName="$(env-DBName)" CommandTimeout="60" />
+    <SqlExecute ConnectionString="Server=$(env-DBServer);Database=master;Integrated Security=SSPI"
+      Command="if exists(select * from sysdatabases where name = '$(env-DBName)') drop database $(env-DBName)" />
+    <SqlExecute ConnectionString="Server=$(env-DBServer);Database=master;Integrated Security=SSPI"
+      Command="create database $(env-DBName)" />
+    <ExecuteDDL ConnectionString="Server=$(env-DBServer);Database=$(env-DBName);Integrated Security=SSPI"
+      Files="$(PackageDirectory)\Database\baseline.sql" />
+  </Target>
+
+  <Target Name="DeployDatabase" DependsOnTargets="CreateDatabase">
+    <Message Text="DbType: $(DbType)"/>
+    <Message Text="DbConnection: Server=$(env-DBServer);Database=$(env-DBName);Integrated Security=SSPI"/>
+    <Message Text="Dir: $(PackageDirectory)\Database\Migrations"/>
+    <Message Text="OutputFile: $(BuildDirectory)\delta.sql"/>
+    <Message Text="Path: $(BuildDirectory)\delta.sql"/>
+    <Message Text="ConnectionString: Server=$(env-DBServer);Database=$(env-DBName);Integrated Security=SSPI"/>
+    <Message Text="Files: $(BuildDirectory)\delta.sql"/>
+
+    <Dbdeploy
+      DbType="mssql"
+      DbConnection="Server=$(env-DBServer);Database=$(env-DBName);Integrated Security=SSPI"
+      Dir="$(PackageDirectory)\Database\Migrations"
+      OutputFile="$(BuildDirectory)\delta.sql" />
+    <File.Replace Path="$(BuildDirectory)\delta.sql" OldValue="$DBUSER" NewValue="$(env-DBUser)" />
+    <ExecuteDDL ConnectionString="Server=$(env-DBServer);Database=$(env-DBName);Integrated Security=SSPI"
+      Files="$(BuildDirectory)\delta.sql" />
+  </Target>
+
+  <Target Name="SpliceWebConfig">
+    <XmlFile.SetValue
+      Path="$(PackageDirectory)\Acme.Web\Web.Config"
+      XPath="//setting[@name='DBConnectionString']/value"
+      Value="$(env-DBConnection)" />
+  </Target>
+
+  <Target Name="SpliceFunctionalTestConfig">
+    <XmlFile.SetValue
+      Path="$(MSBuildProjectDirectory)\$(FunctionalTestProject)\bin\$(Configuration)\$(FunctionalTestProject).dll.config"
+      XPath="//setting[@name='AcmeUrl']/value"
+      Value="http://$(env-WebServer)/$(env-VirtualDirectoryName)" />
+  </Target>
+
+</Project>

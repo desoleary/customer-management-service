@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement", "CustomerManagementService\CustomerManagement.csproj", "{640B3FB0-8D35-4911-88A9-96E988117227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Web.Host", "CustomerManagement.Web.Host\CustomerManagement.Web.Host.csproj", "{92819BC0-88C5-4969-937A-7D2D2AE2B5A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{039FD8DF-3AB8-433D-A58C-C3F2864DDE13}"
+	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
+		CustomerManagement.msbuild = CustomerManagement.msbuild
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environments", "Environments", "{2531F2C1-2C8C-4B57-947C-368C380EE409}"
+	ProjectSection(SolutionItems) = preProject
+		Environments\local.properties = Environments\local.properties
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.UnitTests", "CustomerManagement.UnitTests\CustomerManagement.UnitTests.csproj", "{6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{F6D50423-533E-49C6-AAE5-E6843B5E48F9}"
+	ProjectSection(SolutionItems) = preProject
+		Database\baseline.sql = Database\baseline.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{A3F9A5E1-07E0-4287-B3EF-E882C54A1CD6}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Migrations\001_addStudentTable.sql = Database\Migrations\001_addStudentTable.sql
+		Database\Migrations\002_addStudentData.sql = Database\Migrations\002_addStudentData.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.IntegrationTests", "CustomerManagement.IntegrationTests\CustomerManagement.IntegrationTests.csproj", "{99EF866F-FAEF-4680-9014-BD1F207B7548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.FunctionalTests", "CustomerManagement.FunctionalTests\CustomerManagement.FunctionalTests.csproj", "{386D311E-1BA4-4EFF-BE72-A006C63CACCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Common", "CustomerManagement.Common\CustomerManagement.Common.csproj", "{616FCB1B-A336-4118-AE1E-9AB267783C3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640B3FB0-8D35-4911-88A9-96E988117227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640B3FB0-8D35-4911-88A9-96E988117227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640B3FB0-8D35-4911-88A9-96E988117227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640B3FB0-8D35-4911-88A9-96E988117227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92819BC0-88C5-4969-937A-7D2D2AE2B5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92819BC0-88C5-4969-937A-7D2D2AE2B5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92819BC0-88C5-4969-937A-7D2D2AE2B5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92819BC0-88C5-4969-937A-7D2D2AE2B5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF27B3C-07AA-4FFC-A2FD-069A07BAADFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EF866F-FAEF-4680-9014-BD1F207B7548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EF866F-FAEF-4680-9014-BD1F207B7548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EF866F-FAEF-4680-9014-BD1F207B7548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EF866F-FAEF-4680-9014-BD1F207B7548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386D311E-1BA4-4EFF-BE72-A006C63CACCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386D311E-1BA4-4EFF-BE72-A006C63CACCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386D311E-1BA4-4EFF-BE72-A006C63CACCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386D311E-1BA4-4EFF-BE72-A006C63CACCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616FCB1B-A336-4118-AE1E-9AB267783C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616FCB1B-A336-4118-AE1E-9AB267783C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616FCB1B-A336-4118-AE1E-9AB267783C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616FCB1B-A336-4118-AE1E-9AB267783C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3F9A5E1-07E0-4287-B3EF-E882C54A1CD6} = {F6D50423-533E-49C6-AAE5-E6843B5E48F9}
+	EndGlobalSection
+EndGlobal
